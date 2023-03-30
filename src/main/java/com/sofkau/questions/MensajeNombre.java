@@ -1,0 +1,19 @@
+package com.sofkau.questions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+
+
+public class MensajeNombre implements Question<String> {
+
+    @Override
+    public String answeredBy(Actor actor) {/*
+        return MENSAJE_INICIO.resolveFor(actor).getText();*/
+        return null;
+    }
+
+    public static MensajeNombre mensajeNombre(){
+        return new MensajeNombre();
+    }
+}
