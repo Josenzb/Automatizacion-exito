@@ -7,9 +7,10 @@ Característica: Compras en pagina del exito
   quiero iniciar sesion en la pagina del exito
   para poder comprar productos en la página
 
-  @InicioSesión
-  Escenario: Iniciar sesion
+  @Compra
+  Escenario: Comprar Salchichon
     Dado que el usuario esta en la pagina de inicio
-    Cuando completa los campos para iniciar sesion
-    Entonces el usuario iniciara sesion y vera un mensaje de bienvenida
+    Cuando completa los campos e inicie sesion
+    Y escoja el producto seleccionado y realize el pago
+    Entonces el usuario vera un mensaje de de compra exitosa
 

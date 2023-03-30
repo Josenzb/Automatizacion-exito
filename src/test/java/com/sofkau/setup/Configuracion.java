@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -57,9 +58,9 @@ public class Configuracion {
         PropertyConfigurator.configure(USER_DIR.value() + LOG4J_PROPERTIES_FILE_PATH.getValue());
     }
 
-    public static void waitExplicit() {
+    public static void waitExplicit(WebElement element) {
         WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
-        wait.until(ExpectedConditions.alertIsPresent());
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
 }

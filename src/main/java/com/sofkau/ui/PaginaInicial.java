@@ -21,4 +21,15 @@ public class PaginaInicial extends PageObject {
     public static final Target BOTON_INICIAR_SESION = Target.the("Boton mi cuenta")
             .located(By.cssSelector(".vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-small.t-action--small.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer"));
 
+    public static final Target BOTON_MERCADO = Target.the("Boton mercado")
+            .located(By.id("header-tabMercado"));
+
+    public static final Target CAMPO_BUSQUEDA = Target.the("Campo de busqueda")
+            .located(By.id("downshift-1-input"));
+
+    public static final Target BOTON_BUSCAR = Target.the("Boton buscar")
+            .located(By.cssSelector(".vtex-store-components-3-x-searchBarIcon.vtex-store-components-3-x-searchBarIcon--search.flex.items-center.pointer.bn.bg-transparent.outline-0.pv0.pl0.pr3"));
+
+    public static final Target BOTON_TIPO_ENVIO = Target.the("Boton seleccionar modo adquisicion")
+            .located(By.xpath("//span[@class='exito-geolocation-3-x-addressResult']"));
 }
