@@ -14,4 +14,9 @@ public class PaginaSetDireccion extends PageObject {
 
     public static final Target BOTON_CONINUAR = Target.the("Boton continuar")
             .located(By.xpath("//button[@class='exito-geolocation-3-x-primaryButtonEnable']"));
+
+
+    public static final Target BOTON_CERRAR = Target.the("Boton cerrar")
+            .located(By.xpath("//span[contains(@class,'exito-geolocation-3-x-cursorPointer')]"));
+
 }

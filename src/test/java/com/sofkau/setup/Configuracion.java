@@ -1,6 +1,7 @@
 package com.sofkau.setup;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -62,5 +63,4 @@ public class Configuracion {
         WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
-
 }

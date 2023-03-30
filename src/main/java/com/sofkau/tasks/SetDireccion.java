@@ -20,7 +20,8 @@ public class SetDireccion implements Task {
                 Hit.the(Keys.ENTER).into(CAMPO_CIUDAD),
                 Click.on(CAMPO_TIENDA),
                 Hit.the(Keys.ENTER).into(CAMPO_TIENDA),
-                Click.on(BOTON_CONINUAR)
+                Click.on(BOTON_CONINUAR),
+                Click.on(BOTON_CERRAR)
         );
     }
 
