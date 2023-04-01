@@ -1,12 +1,16 @@
 package com.sofkau.ui;
 
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class PaginaProductoSeleccionado {
+public class PaginaProductoSeleccionado extends PageObject {
 
-    public static final Target BOTON_COMPRAR = Target.the("Producto Seleccionado")
-            .located(By.xpath("(//span[@class='exito-vtex-components-4-x-buttonText'])[2]"));
+    public static final Target BOTON_AGREGAR = Target.the("Producto Seleccionado")
+            .located(By.xpath("//button[contains(.,'Agregar')]"));
+
+    public static final Target BOTON_CARRITO = Target.the("Boton carrito")
+            .located(By.xpath("//a[@class='exito-header-3-x-minicartLink']"));
 
 
 }
