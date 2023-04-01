@@ -8,8 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
        snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features"},
-        glue = {"com.sofkau.stepdefinitions"},
-        tags = {"not @Registro"}
+        glue = {"com.sofkau.stepdefinitions"}
 )
-public class InicioSesionTest {
+public class RealizarCompraTest {
 }
